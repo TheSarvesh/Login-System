@@ -3,6 +3,7 @@ class NewLogin:
         c3=0
         print("1)Log In\t2)Sign In")
         choice=int(input("Enter your choice: "))
+        # Few number of Usernames and their respective Passwords are provided for demostration.
         if (choice==1):
             #Login Username
             fo = open("Username", "r")
@@ -52,6 +53,7 @@ class NewLogin:
                 Username = open("Username", "a")
                 Username.write(f"{user2}\n")
                 Username.close()
+                # Sign In Password
                 pass2 = input("Enter a Password: ")
                 Password = open("Password", "a")
                 Password.write(f"{pass2}\n")
